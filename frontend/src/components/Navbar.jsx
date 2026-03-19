@@ -23,7 +23,7 @@ function Navbar() {
                         to= "/" 
                         className={({ isActive }) => 
                         `inline-block transition duration-200 hover:scale-105 ${
-                        isActive ? "border-b-2 border-white pb-1" : ""                      }`
+                        isActive ? "text-[#8B6B4A]" : ""                      }`
                         }    
                     > 
                     Home
@@ -35,7 +35,7 @@ function Navbar() {
                         to= "/shop" 
                         className={({ isActive }) => 
                         `inline-block transition duration-200 hover:scale-105 ${
-                        isActive ? "border-b-2 border-white pb-1" : ""                      }`
+                        isActive ? "text-[#8B6B4A]" : ""                      }`
                         }    
                     > 
                     Shop
@@ -47,7 +47,7 @@ function Navbar() {
                         to= "/about" 
                         className={({ isActive }) => 
                         `inline-block transition duration-200 hover:scale-105 ${
-                        isActive ? "border-b-2 border-white pb-1" : ""                      }`
+                        isActive ? "text-[#8B6B4A]" : ""                      }`
                         }    
                     > 
                     About
@@ -59,7 +59,7 @@ function Navbar() {
                         to= "/cart" 
                         className={({ isActive }) => 
                         `inline-block transition duration-200 hover:scale-105 ${
-                        isActive ? "border-b-2 border-white pb-1" : ""                      }`
+                        isActive ? "text-[#8B6B4A]" : ""                      }`
                         }    
                     > 
                     Cart
@@ -71,8 +71,9 @@ function Navbar() {
                         to="/login"
                         end
                         className={({ isActive }) =>
-                        `inline-block border border-white rounded-lg px-4 py-3 transition duration-200 hover:scale-105 hover:bg-white/20 ${
-                        isActive ? "bg-white/20" : ""                          }`
+                        `inline-block border rounded-lg px-4 py-3 transition duration-200 hover:scale-105 hover:bg-white/20 ${
+                        isActive ? "text-[#8B6B4A] border-[#8B6B4A]"
+                        : "text-white border-white"                         }`
                         }
                     >
                     Login

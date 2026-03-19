@@ -69,8 +69,9 @@ function Navbar() {
                    <NavLink
 
                         to="/login"
+                        end
                         className={({ isActive }) =>
-                        `inline-block border border-white rounded-lg px-4 py-3 transition duration-200 hover:scale-105 ${
+                        `inline-block border border-white rounded-lg px-4 py-3 transition duration-200 hover:scale-105 hover:bg-white/20 ${
                         isActive ? "bg-white/20" : ""                          }`
                         }
                     >

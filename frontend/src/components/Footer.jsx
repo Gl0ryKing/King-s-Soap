@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <footer className="bg-[#C5AE98] text-black py-4 text-center">
-      <div className="container mx-auto text-center">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    <footer className="bg-[#C5AE98] py-4 px-8">
+      <div className="flex items-center justify-context flex-wrap gap-4">
+        <h2 className=" text-black text-3xl font-semibold">Contact Us: </h2>
       </div>
     </footer>
   );

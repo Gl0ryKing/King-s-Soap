@@ -1,5 +1,10 @@
 const Cart = () => {
-  return <div style={{ width: "100%", height: "100%" }} />;
+  return (
+  <div style={{ width: "100%", height: "100%" }}>
+    <h1 className="text-4xl text-[#FFFFFF] font-[Inria_Serif] pl-11 pt-8">Cart</h1>
+  </div>
+    
+  );
 };
 
 export default Cart;

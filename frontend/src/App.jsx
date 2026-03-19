@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Shop from "./pages/Shop";
-import About from "./pages/About";
-import Cart from "./pages/Cart";
-import Login from "./pages/Login";
+import Home from "./Pages/Home";
+import Shop from "./Pages/Shop";
+import About from "./Pages/About";
+import Cart from "./Pages/Cart";
+import Login from "./Pages/Login";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 //const Home = () => {
@@ -12,6 +13,9 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
+    
+      <Navbar />
+
         <div className="flex flex-col min-h-screen">
           <div className="flex-grow">
       <Routes>

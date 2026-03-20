@@ -1,4 +1,4 @@
-import {FaMapMarkerAlt} from "react-icons/fa";
+import {FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaInstagram} from "react-icons/fa";
 
 function Footer() {
   return (
@@ -11,7 +11,11 @@ function Footer() {
             <FaMapMarkerAlt className="text-2xl" />
             <span className="text-sm">Sacramento, CA</span>
           </div>
-
+          
+          <div className="flex items-center gap-2">
+            <FaEnvelope className="text-2xl" />
+            <span className="text-sm">kinganita25@gmail.com</span>
+          </div>
 
           
 

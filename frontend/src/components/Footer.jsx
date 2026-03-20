@@ -21,6 +21,11 @@ function Footer() {
             <FaPhoneAlt className="text-2xl" />
             <span className="text-sm">916.640.6007</span>
           </div>
+
+          <div className="flex items-center gap-2">
+            <FaInstagram className="text-2xl" />
+            <span className="text-sm">@kingssoap</span>
+          </div>
           
 
         </div>

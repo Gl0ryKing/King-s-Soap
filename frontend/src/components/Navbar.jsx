@@ -1,5 +1,6 @@
 import logo from '../assets/logo.png';
 import { Link, NavLink } from "react-router-dom";
+import { BsBag } from "react-icons/bs";
 
 function Navbar() {
     return (
@@ -62,7 +63,7 @@ function Navbar() {
                         isActive ? "text-[#8B6B4A]" : ""                      }`
                         }    
                     > 
-                    Cart
+                    <BsBag className="text-2xl translate-y-[3px]" />
                     
                     </NavLink>
 

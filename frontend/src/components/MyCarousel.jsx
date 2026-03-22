@@ -1,6 +1,7 @@
 import { useState } from "react";
+import RouteButton from "./RouteButton";
 
-function MyCarousel({ images , description}) {
+function MyCarousel({ images , description, buttonTo, buttonLabel}) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -16,6 +17,8 @@ function MyCarousel({ images , description}) {
   };
 
   return (
+    <div className="flex flex-col items-center gap-3">
+      <div className="relative w-full">
     <div className="relative w-[500px] h-[300px] overflow-hidden rounded-lg">
       <img
         src={images[currentIndex]}
@@ -41,6 +44,13 @@ function MyCarousel({ images , description}) {
         {description}
       </div>
       
+    </div>
+
+    </div>
+
+    <div className="border border-white text-[#FFFFFF] font-[Inria_Serif] px-2 py-2 rounded">
+      <RouteButton to={buttonTo} label={buttonLabel || "View More"} />
+    </div>
     </div>
   );
 }

@@ -6,6 +6,8 @@ import Cart from "./Pages/Cart";
 import Login from "./Pages/Login";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Product1, Product2, Product3, Product4, Product5, Product6 } from "./Pages/ProductPages";
+
 
 //const Home = () => {
  // return <div style={{ width: "100%", height: "100%" }} />;
@@ -24,6 +26,14 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/Product1" element={<Product1 />} />
+        <Route path="/Product2" element={<Product2 />} />
+        <Route path="/Product3" element={<Product3 />} />
+        <Route path="/Product4" element={<Product4 />} />
+        <Route path="/Product5" element={<Product5 />} />
+        <Route path="/Product6" element={<Product6 />} />
+
+
 
       </Routes>
         </div>

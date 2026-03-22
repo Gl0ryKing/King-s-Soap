@@ -17,6 +17,7 @@ import TRB3 from "../assets/images/Tangerine, Rose & Blackcurrant/TRB 3.png";
 import WAMC1 from "../assets/images/What A Man C/WAMC 1.png";
 import WAMC2 from "../assets/images/What A Man C/WAMC 2.png";
 import WAMC3 from "../assets/images/What A Man C/WAMC 3.png";
+import HomeImage from "../components/HomePageImage";
 
 const Home = () => {
 
@@ -29,7 +30,9 @@ const Home = () => {
 
   return (
   <div style={{ width: "100%", height: "100%" }}>
-  <h1 className="text-4xl text-[#FFFFFF] font-[Inria_Serif] pl-11 pt-8"> Home </h1>
+  {/*<h1 className="text-4xl text-[#FFFFFF] font-[Inria_Serif] pl-11 pt-8"> Home </h1>*/}
+
+  <HomeImage /> {/*Load HomePageImage, includes text over image*/}
 
  {/*Carousel for popular items*/}
  

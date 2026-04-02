@@ -6,6 +6,7 @@ import Cart from "./Pages/Cart";
 import Login from "./Pages/Login";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import VerifyAccount from "./Pages/VerifyAccount";
 import { Product1, Product2, Product3, Product4, Product5, Product6 } from "./Pages/ProductPages";
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/verifyaccount" element={<VerifyAccount />} />
         <Route path="/Product1" element={<Product1 />} />
         <Route path="/Product2" element={<Product2 />} />
         <Route path="/Product3" element={<Product3 />} />

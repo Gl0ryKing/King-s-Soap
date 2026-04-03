@@ -1,43 +1,45 @@
-
 import LoginBackgroundImage from "../assets/images/login-background-image/login-background-image.png";
 import { MdOutlineEmail } from "react-icons/md";
 
-
 function VerifyAccount() {
-    return (
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-white">
+      {/* Background Image */}
+      <img
+        src={LoginBackgroundImage}
+        alt="Background"
+        className="absolute h-full w-full object-cover z-0"
+      />
 
-        <div className="min-h-screen bg-white flex items-center justify-center">
-            {/* Background Image */}
-            <img
-                src={LoginBackgroundImage}
-                alt="Background"
-                className="absolute w-full h-full object-cover z-0"
-            />
-            {/*Account Verification Notifier*/}
-            <div className="w-full max-w-md px-6 py-8 bg-white rounded-2xl shadow-lg -mt-40 z-20">
-                <form className="space-y-6">
-                <div className="flex items-center justify-center ">
-                  <MdOutlineEmail className="text-9xl" />
-                </div>
+      {/*Account Verification Notifier*/}
+      <div className="z-20 w-full max-w-md rounded-2xl bg-white px-6 py-8 shadow-lg -mt-40">
+        <div className="space-y-6">
+          <div className="flex justify-center">
+            <MdOutlineEmail className="text-9xl text-zinc-800" />
+          </div>
 
-                <div>
-                    <label className="block text-2xl font-small text-center">
-                    Please check your email for instructions on verifying your account.
-                    </label>
+          <div className="text-center">
+            <h1 className="text-2xl font-medium text-gray-800">
+              Verify your account
+            </h1>
+            <p className="mt-2 text-base text-gray-600">
+              Please check your email for instructions on verifying your account.
+            </p>
+          </div>
 
-                </div>
 
-                <button
-                    type="submit"
-                    className="w-full h-12 rounded-xl bg-zinc-800 text-white text-xl font-medium"
-                >
-                    Resend Email
-                </button>
-                </form>
-            </div>
+            {/* Change button type to this when we end up handling button */}
+            {/* <button type="button" onClick={handleResendEmail}> */}
+          <button
+            type="button"
+            className="w-full h-12 rounded-xl bg-zinc-800 text-xl font-medium text-white cursor-pointer"
+          >
+            Resend Email
+          </button>
         </div>
-    
-    );
+      </div>
+    </div>
+  );
 }
 
 export default VerifyAccount;

@@ -1,55 +1,45 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RouteButton from "./RouteButton";
 
 function MyCarousel({ images , description, buttonTo, buttonLabel}) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  
+  
+  useEffect(() => {
+    if (!images || images.length === 0) return;
 
-  const goToPrevious = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 7000); // changes every 7 seconds
 
-  const goToNext = () => {
-    const isLastSlide = currentIndex === images.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
+    return () => clearInterval(interval);
+  }, [images]);
+
+  if (!images || images.length === 0) {
+    return null;
+  }
 
   return (
     <div className="flex flex-col items-center gap-3">
       <div className="relative w-full">
     <div className="relative w-[500px] h-[300px] overflow-hidden rounded-lg">
+      {images.map((image, index) => ( 
       <img
-        src={images[currentIndex]}
-        alt={`Slide ${currentIndex + 1}`}
-        className="w-full h-full object-cover rounded-lg"
-      />
-
-      <button
-        onClick={goToPrevious}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded"
-      >
-        Prev
-      </button>
-
-      <button
-        onClick={goToNext}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded"
-      >
-        Next
-      </button>
-
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded">
-        {description}
-      </div>
-      
+              key={index}
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className={`absolute top-0 left-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 ${
+                index === currentIndex ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}  
     </div>
-
     </div>
 
     <div className="border border-white text-[#FFFFFF] font-[Inria_Serif] px-2 py-2 rounded">
-      <RouteButton to={buttonTo} label={buttonLabel || "View More"} />
+      <RouteButton to={buttonTo} label={buttonLabel || description} />
     </div>
     </div>
   );

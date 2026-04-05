@@ -1,8 +1,15 @@
 
 import { Link } from "react-router-dom";
-import LoginBackgroundImage from "../assets/images/login-background-image/login-background-image.png";
-
+import supabase from "../supabaseClient";
+const getImageUrl =  (imagePath) => {
+    const { data } = supabase.storage
+      .from("Product Images")
+      .getPublicUrl(imagePath);
+      return data.publicUrl;
+  };
 function CreateAccount() {
+    
+    const LoginBackgroundImage = getImageUrl("images/login-background-image.png");
     return (
 
         <div className="min-h-screen bg-white flex items-center justify-center">

@@ -2,36 +2,34 @@ import {FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaInstagram} from "react-icons/f
 
 function Footer() {
   return (
-    <footer className="bg-[#C5AE98] py-5 px-8">
-      <div className="flex items-start justify-start flex-wrap gap-4 h-20">
-        <h2 className=" text-black text-5xl font-semibold">Contact Us: </h2>
+    <footer className="bg-[#C5AE98] py-6 text-center text-[#FFFFFF]">
+      
+      <h2 className="text-2xl font-[Inter] mb-3">
+        Contact Us
+      </h2>
+
+      <div className="flex justify-center gap-8 text-2xl">
+        <a href="https://maps.google.com/maps?q=Sacramento+CA" target="_blank" rel="noopener noreferrer">
+          <FaMapMarkerAlt />
+        </a>
+
+        <a href="mailto:kinganita25@gmail.com">
+          <FaEnvelope />
+        </a>
+
+        <a href="Cell:19168569659">
+          <FaPhoneAlt />
+        </a>
+
+        <a href="https://instagram.com/kingssoap" target="_blank" rel="noopener noreferrer">
+          <FaInstagram />
+        </a>
       </div>
 
-      <div className="flex items-center justify-end flex-wrap gap-4 font-semibold">
-        <div className="flex items-center gap-8 flex-wrap text-black">
-          <div className="flex items-center gap-2 ">
-            <FaMapMarkerAlt className="text-3xl" />
-            <span className="text-lg">Sacramento, CA</span>
-          </div>
+      <p className="mt-3 text-md font-[Inter]">
+        Sacramento, CA • kinganita25@gmail.com • (916) 856-9659 • @kingssoap
+      </p>
 
-          <div className="flex items-center gap-2">
-            <FaEnvelope className="text-3xl" />
-            <span className="text-lg">kinganita25@gmail.com</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <FaPhoneAlt className="text-3xl" />
-            <span className="text-lg">916.640.6007</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <FaInstagram className="text-3xl" />
-            <span className="text-lg">@kingssoap</span>
-          </div>
-          
-
-        </div>
-      </div>
     </footer>
   );
 }

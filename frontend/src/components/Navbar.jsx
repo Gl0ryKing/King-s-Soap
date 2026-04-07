@@ -12,7 +12,7 @@ function Navbar() {
 
                     <Link to = "/">
 
-                    <img src={logo} alt="Logo" className="h-30" />
+                    <img src={logo} alt="Logo" className="h-30" /> {/*Need to change image*/}
                     
                     </Link>
 

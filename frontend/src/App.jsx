@@ -8,7 +8,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import VerifyAccount from "./Pages/VerifyAccount";
 import EmailToPWReset from "./Pages/EmailToPWReset";
+import UserAccount from "./Pages/UserAccount";
+import UserChangePassword from "./Pages/UserChangePassword";
+import UserChangeAddress from "./Pages/UserChangeAddress";
 import { Product1, Product2, Product3, Product4, Product5, Product6 } from "./Pages/ProductPages";
+
 
 
 //const Home = () => {
@@ -28,6 +32,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/userAccount" element={<UserAccount />} />
+        <Route path="/userChangePassword" element={<UserChangePassword />} />
+        <Route path="/userChangeAddress" element={<UserChangeAddress />} />
         <Route path="/verifyaccount" element={<VerifyAccount />} />
         <Route path="/emailToPWReset" element={<EmailToPWReset />} />
         <Route path="/Product1" element={<Product1 />} />

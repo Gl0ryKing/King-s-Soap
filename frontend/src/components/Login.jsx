@@ -1,5 +1,6 @@
 
 import LoginBackgroundImage from "../assets/images/login-background-image/login-background-image.png";
+import { NavLink } from "react-router-dom";
 
 function HomeLogin() {
     return (
@@ -52,9 +53,15 @@ function HomeLogin() {
                 */}
 
                 <div class="space-y-5 pt-2">
-                    <a href="#" class="block text-2xl text-gray-800 underline underline-offset-4">
-                    Forgot password?
-                    </a>
+                    <NavLink
+                        to="/UserChangePassword"
+                        className={({ isActive }) =>
+                            'block text-2xl text-gray-800 underline underline-offset-4 hover:scale-101 hover:text-[#8B6B4A]'
+                        }
+                    >
+                        Forgot Password?
+                    </NavLink>
+                  
 
                     <a href="#" class="block text-2xl text-gray-800 underline underline-offset-4">
                     Create an account

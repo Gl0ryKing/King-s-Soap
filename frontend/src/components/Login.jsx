@@ -54,7 +54,7 @@ function HomeLogin() {
 
                 <div class="space-y-5 pt-2">
                     <NavLink
-                        to="/UserChangePassword"
+                        to="/EmailToPWReset"
                         className={({ isActive }) =>
                             'block text-2xl text-gray-800 underline underline-offset-4 hover:scale-101 hover:text-[#8B6B4A]'
                         }

@@ -13,27 +13,27 @@ function UserAccount() {
       <div className="flex justify-center gap-24 mt-8">
         
         {/* Change Password */}
+        <Link to="/userChangePassword">
         <div
           className="w-100 h-100 bg-[#c4b5a5] flex items-center justify-center cursor-pointer hover:scale-105 transition"
         >
-        <Link to="/userChangePassword">
             <button className="border border-black px-10 py-4 text-xl font-semibold">
                 Change Password
             </button>    
-        </Link>
           
         </div>
+        </Link>
 
         {/* Change Address */}
+        <Link to="/userChangeAddress">
         <div
           className="w-100 h-100 bg-[#c4b5a5] flex items-center justify-center cursor-pointer hover:scale-105 transition"
         >
-          <Link to="/userChangeAddress">
             <button className="border border-black px-10 py-4 text-xl font-semibold">
                 Change Address
             </button>    
-        </Link>
         </div>
+        </Link>
 
         {/* Log Out */}
         <div

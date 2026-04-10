@@ -21,7 +21,7 @@ function Navbar() {
                     <Link to = "/" className="block outline-none" >
 
                     <img src={logo} alt="Logo" className="h-32 w-auto block" />
-                    <img src={logo} alt="Logo" className="h-30" /> {/*Need to change image*/}
+                   {/* <img src={logo} alt="Logo" className="h-30" /> Need to change image*/}
                     
                     </Link>
 

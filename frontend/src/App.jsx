@@ -7,6 +7,7 @@ import Login from "./Pages/Login";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import VerifyAccount from "./Pages/VerifyAccount";
+import CreateAccount from "./Pages/CreateAccount";
 import EmailToPWReset from "./Pages/EmailToPWReset";
 import UserAccount from "./Pages/UserAccount";
 import UserChangePassword from "./Pages/UserChangePassword";
@@ -36,6 +37,7 @@ function App() {
         <Route path="/userChangePassword" element={<UserChangePassword />} />
         <Route path="/userChangeAddress" element={<UserChangeAddress />} />
         <Route path="/verifyaccount" element={<VerifyAccount />} />
+        <Route path="/createaccount" element={<CreateAccount />} />
         <Route path="/emailToPWReset" element={<EmailToPWReset />} />
         <Route path="/Product1" element={<Product1 />} />
         <Route path="/Product2" element={<Product2 />} />

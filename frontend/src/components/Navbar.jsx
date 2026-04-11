@@ -1,8 +1,16 @@
-import logo from '../assets/logo.png';
+import supabase from "../supabaseClient";
 import { Link, NavLink } from "react-router-dom";
 import { BsBag } from "react-icons/bs";
 
+const getImageUrl =  (imagePath) => {
+    const { data } = supabase.storage
+      .from("Product Images")
+      .getPublicUrl(imagePath);
+      return data.publicUrl;
+  };
+
 function Navbar() {
+    const logo = getImageUrl("images/logo.png");
     return (
         <nav className = "bg-[#C5AE98] text-[#FFFFFF] p-2 text-center">
 
@@ -10,9 +18,10 @@ function Navbar() {
                 
                 <div>
 
-                    <Link to = "/">
+                    <Link to = "/" className="block outline-none" >
 
-                    <img src={logo} alt="Logo" className="h-30" /> {/*Need to change image*/}
+                    <img src={logo} alt="Logo" className="h-32 w-auto block" />
+                   {/* <img src={logo} alt="Logo" className="h-30" /> Need to change image*/}
                     
                     </Link>
 

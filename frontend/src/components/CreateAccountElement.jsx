@@ -1,17 +1,14 @@
 
-import LoginBackgroundImage from "../assets/images/login-background-image/login-background-image.png";
-import { NavLink } from "react-router-dom";
-
-import supabase from "../supabaseClient";
 import { Link } from "react-router-dom";
+import supabase from "../supabaseClient";
 const getImageUrl =  (imagePath) => {
     const { data } = supabase.storage
       .from("Product Images")
       .getPublicUrl(imagePath);
       return data.publicUrl;
   };
-function HomeLogin() {
-
+function CreateAccount() {
+    
     const LoginBackgroundImage = getImageUrl("images/login-background-image.png");
     return (
 
@@ -22,8 +19,8 @@ function HomeLogin() {
                 alt="Background"
                 className="absolute w-full h-full object-cover z-0"
             />
-            {/*The Login Form*/}
-            <div className="w-full max-w-md px-6 py-8 bg-white rounded-2xl shadow-lg -mt-40 z-20">
+            {/*Create Account Form*/}
+            <div className="w-full max-w-md px-6 py-8 bg-white rounded-2xl shadow-lg -mt-20 z-20">
                 <form className="space-y-6">
                 <div>
                     <label className="block text-2xl font-medium text-gray-800 mb-2">
@@ -47,38 +44,31 @@ function HomeLogin() {
                     />
                 </div>
 
+                <div>
+                    <label className="block text-2xl font-medium text-gray-800 mb-2">
+                    Re-enter password
+                    </label>
+                    <input
+                    type="password"
+                    placeholder="Value"
+                    className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-gray-400"
+                    />
+                </div>
+
                 <button
                     type="submit"
                     className="w-full h-12 rounded-xl bg-zinc-800 text-white text-xl font-medium"
                 >
-                    User Login
+                    Create Account
                 </button>
-                {/* If we ever want a separate admin login
-                <button
-                    type="button"
-                    class="w-full h-12 rounded-xl bg-zinc-800 text-white text-xl font-medium"
-                >
-                    Admin Login
-                </button>
-                */}
+               
 
-                <div class="space-y-5 pt-2">
-                    <NavLink
-                        to="/EmailToPWReset"
-                        className={({ isActive }) =>
-                            'block text-2xl text-gray-800 underline underline-offset-4 hover:scale-101 hover:text-[#8B6B4A]'
-                        }
-                    >
-                        Forgot Password?
-                    </NavLink>
-                  
-
-                    <Link 
-                    to="/createaccount" 
-                    className="inline-block text-2xl text-gray-800 underline underline-offset-4"
-                    >
-                    Create an account
+                <div className="space-y-5 pt-2">
+                    <Link to="/login" className="inline-block text-2xl text-gray-800 underline underline-offset-4">
+                    Login
+                    
                     </Link>
+
                 </div>
                 </form>
             </div>
@@ -87,4 +77,4 @@ function HomeLogin() {
     );
 }
 
-export default HomeLogin;
+export default CreateAccount;

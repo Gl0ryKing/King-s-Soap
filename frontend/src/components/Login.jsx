@@ -1,3 +1,7 @@
+
+import LoginBackgroundImage from "../assets/images/login-background-image/login-background-image.png";
+import { NavLink } from "react-router-dom";
+
 import supabase from "../supabaseClient";
 import { Link } from "react-router-dom";
 const getImageUrl =  (imagePath) => {
@@ -58,21 +62,23 @@ function HomeLogin() {
                 </button>
                 */}
 
-                <div className="flex flex-col gap-5 pt-2">
-                <span className="block mb-5">
-                    <a href="#" className="inline-block text-2xl text-gray-800 underline underline-offset-4"
+                <div class="space-y-5 pt-2">
+                    <NavLink
+                        to="/EmailToPWReset"
+                        className={({ isActive }) =>
+                            'block text-2xl text-gray-800 underline underline-offset-4 hover:scale-101 hover:text-[#8B6B4A]'
+                        }
                     >
-                    Forgot password?
-                    </a>
-                    </span>
-                    <span className="block">
+                        Forgot Password?
+                    </NavLink>
+                  
+
                     <Link 
                     to="/createaccount" 
                     className="inline-block text-2xl text-gray-800 underline underline-offset-4"
                     >
                     Create an account
                     </Link>
-                </span>
                 </div>
                 </form>
             </div>

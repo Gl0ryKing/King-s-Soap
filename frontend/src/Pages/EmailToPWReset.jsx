@@ -1,4 +1,5 @@
 import LoginBackgroundImage from "../assets/images/login-background-image/login-background-image.png";
+import { NavLink } from "react-router-dom";
 import supabase from "../supabaseClient";
 
 function EmailToPWReset() {
@@ -51,12 +52,14 @@ function EmailToPWReset() {
             {/* Change button type to this when we end up handling button */}
             {/* <button type="button" onClick={handleResendEmail}> */}
           <div className="flex gap-4">
-            <button
-              type="button"
-              className="flex-1 h-12 rounded-xl border border-zinc-800 text-xl font-medium text-zinc-800 cursor-pointer bg-transparent"
-            >
+            
+            <NavLink to="/Login"
+              className={({ isActive }) =>
+                'flex-1 h-12 rounded-xl border border-zinc-800 text-xl font-medium text-zinc-800 cursor-pointer bg-transparent flex items-center justify-center hover:scale-101 hover:text-[#8B6B4A]'
+              }
+              >
               Cancel
-            </button>
+            </NavLink>
 
             <button
               type="button"

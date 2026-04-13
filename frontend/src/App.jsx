@@ -13,6 +13,7 @@ import UserAccount from "./Pages/UserAccount";
 import UserChangePassword from "./Pages/UserChangePassword";
 import UserChangeAddress from "./Pages/UserChangeAddress";
 import { Product1, Product2, Product3, Product4, Product5, Product6 } from "./Pages/ProductPages";
+import PaymentSuccessful from "./Pages/PaymentSuccessful";
 
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/verifyaccount" element={<VerifyAccount />} />
         <Route path="/createaccount" element={<CreateAccount />} />
         <Route path="/emailToPWReset" element={<EmailToPWReset />} />
+        <Route path="/paymentSuccessful" element={<PaymentSuccessful />} />
         <Route path="/Product1" element={<Product1 />} />
         <Route path="/Product2" element={<Product2 />} />
         <Route path="/Product3" element={<Product3 />} />

@@ -34,7 +34,6 @@ const Home = () => {
 
   const PopularItem4 = [
     getImageUrl("images/Salt Air & Honeydew/SAH 1.png"),
-    getImageUrl("images/Salt Air & Honeydew/SAH 2.png"),
     getImageUrl("images/Salt Air & Honeydew/SAH 3.png")
   ];
 

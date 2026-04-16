@@ -6,7 +6,7 @@ const Login = () => {
     {/*<h1 className="text-4xl text-[#FFFFFF] font-[Inria_Serif] pl-11 pt-8">Login</h1>*/}
 
     <HomeLogin /> {/*Load the HomeLogin with the background image*/}
-
+    
   </div>
     
   );

@@ -14,6 +14,12 @@ import UserChangePassword from "./Pages/UserChangePassword";
 import UserChangeAddress from "./Pages/UserChangeAddress";
 import { Product1, Product2, Product3, Product4, Product5, Product6 } from "./Pages/ProductPages";
 import PaymentSuccessful from "./Pages/PaymentSuccessful";
+import Admin from "./Pages/Admin";
+import AdminCreateProduct from "./Pages/AdminCreateProduct"
+import AdminUpdateProduct from "./Pages/AdminUpdateProduct";
+import AdminDeleteProduct from "./Pages/AdminDeleteProduct";
+import AdminUpdateWebsitePhoto from "./Pages/AdminUpdateWebsitePhoto";
+
 
 
 
@@ -47,6 +53,11 @@ function App() {
         <Route path="/Product4" element={<Product4 />} />
         <Route path="/Product5" element={<Product5 />} />
         <Route path="/Product6" element={<Product6 />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/adminCreateProduct" element={<AdminCreateProduct />} />
+        <Route path="/adminUpdateProduct" element={<AdminUpdateProduct />} />
+        <Route path="/adminDeleteProduct" element={<AdminDeleteProduct />} />
+        <Route path="/adminUpdateWebsitePhoto" element={<AdminUpdateWebsitePhoto />} />
 
 
 

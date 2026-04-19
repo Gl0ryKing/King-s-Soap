@@ -100,6 +100,7 @@ function CreateAccount() {
                         onChange={(event) => setEmail(event.target.value)}
                         required
                         pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
+                        autoComplete="email"
                         placeholder="user@example.com"
                         className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-gray-400"
                         />
@@ -115,6 +116,7 @@ function CreateAccount() {
                         onChange={(event) => setPassword(event.target.value)}
                         required
                         minLength={8}
+                        autoComplete="new-password"
                         placeholder="********"
                         className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-gray-400"
                         />

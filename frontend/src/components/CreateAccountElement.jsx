@@ -16,6 +16,9 @@ function CreateAccount() {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
 
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+
     const [errorMessage, setErrorMessage] = useState("");
 
     const navigate = useNavigate();
@@ -42,11 +45,16 @@ function CreateAccount() {
             return;
         }
         
+        setIsSubmitting(true);
+
 
         const { error } = await supabase.auth.signUp({
         email: trimmedEmail,
         password: password,
         });
+
+        setIsSubmitting(false);
+
 
         if (error) {
             setErrorMessage(error.message);
@@ -119,10 +127,11 @@ function CreateAccount() {
                     </p>
                 )}
                 <button
+                    disabled={isSubmitting}
                     type="submit"
                     className="w-full h-12 rounded-xl bg-zinc-800 text-white text-xl font-medium cursor-pointer"
                 >
-                    Create Account
+                    {isSubmitting ? "Creating account..." : "Create Account"}
                 </button>
                
 

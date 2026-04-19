@@ -14,7 +14,8 @@ const About = () => {
     </h1>
     <div className="w-full flex items-center justify-center mt-6">
       <p className="text-xl text-white font-[Inria_Serif] text-center max-w-3xl leading-relaxed">
-        Family owned and started in 2026, King's Soap offers carefully formulated, handcrafted, homemade soaps. All thoughtfully designed, we specialize in small-batch specialty soaps.
+        Founded in 2016, King’s Soap is a family-owned business creating carefully formulated, handcrafted soaps in small batches. 
+        We offer a range of options, including all-natural and organic selections, and avoid harsh chemicals in every bar. 
       </p>
     </div>
     <div className="w-full mt-6 leading-none">
@@ -24,7 +25,7 @@ const About = () => {
 
   <div className="max-w-7xl mx-auto px-6 mb-30">
     <h1 className="text-4xl text-white font-[Inria_Serif] text-center">
-      About Me
+      About Anita King
     </h1>
     <div className="w-full flex items-center justify-center mt-6">
       <p className="text-xl text-white font-[Inria_Serif] text-center max-w-3xl leading-relaxed">

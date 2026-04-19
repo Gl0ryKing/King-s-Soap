@@ -14,6 +14,13 @@ import UserChangePassword from "./Pages/UserChangePassword";
 import UserChangeAddress from "./Pages/UserChangeAddress";
 import PaymentSuccessful from "./Pages/PaymentSuccessful";
 import ProductPage from "./Pages/ProductPage.jsx";
+import Admin from "./Pages/Admin";
+import AdminCreateProduct from "./Pages/AdminCreateProduct"
+import AdminUpdateProduct from "./Pages/AdminUpdateProduct";
+import AdminDeleteProduct from "./Pages/AdminDeleteProduct";
+import AdminUpdateWebsitePhoto from "./Pages/AdminUpdateWebsitePhoto";
+
+
 
 
 //const Home = () => {
@@ -41,6 +48,11 @@ function App() {
         <Route path="/emailToPWReset" element={<EmailToPWReset />} />
         <Route path="/paymentSuccessful" element={<PaymentSuccessful />} />
         <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/adminCreateProduct" element={<AdminCreateProduct />} />
+        <Route path="/adminUpdateProduct" element={<AdminUpdateProduct />} />
+        <Route path="/adminDeleteProduct" element={<AdminDeleteProduct />} />
+        <Route path="/adminUpdateWebsitePhoto" element={<AdminUpdateWebsitePhoto />} />
 
 
 

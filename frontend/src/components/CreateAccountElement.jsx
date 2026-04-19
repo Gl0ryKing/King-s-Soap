@@ -15,7 +15,10 @@ const getImageUrl =  (imagePath) => {
 function CreateAccount() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+
     const [errorMessage, setErrorMessage] = useState("");
+    
 
     const handleCreateAccount = async (event) => {
         event.preventDefault();
@@ -32,6 +35,11 @@ function CreateAccount() {
             "Password must be at least 8 characters and include at least 1 letter and 1 number."
         );
         return;
+        }
+
+        if (password !== confirmPassword) {
+            setErrorMessage("Passwords do not match.");
+            return;
         }
         
 
@@ -94,10 +102,13 @@ function CreateAccount() {
                     Re-enter password
                     </label>
                     <input
-                    type="password"
-                    placeholder="Value"
-                    className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-gray-400"
-                    />
+                        type="password"
+                        value={confirmPassword}
+                        onChange={(event) => setConfirmPassword(event.target.value)}
+                        required
+                        placeholder="Value"
+                        className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-gray-400"
+                        />
                 </div>
 
                 {errorMessage && (

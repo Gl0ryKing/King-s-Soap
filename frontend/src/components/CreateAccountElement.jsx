@@ -54,7 +54,7 @@ function CreateAccount() {
         setIsSubmitting(true);
 
 
-        await supabase.auth.signUp({
+        const { error } = await supabase.auth.signUp({
             email: trimmedEmail,
             password: password,
             options: {

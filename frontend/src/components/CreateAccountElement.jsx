@@ -29,6 +29,12 @@ function CreateAccount() {
         setErrorMessage("");
 
         const trimmedEmail = email.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+        if (!emailRegex.test(trimmedEmail)) {
+        setErrorMessage("Please enter a valid email address.");
+        return;
+        }
 
         const hasLetter = /[A-Za-z]/.test(password);
         const hasNumber = /\d/.test(password);

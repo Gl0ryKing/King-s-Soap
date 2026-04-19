@@ -2,18 +2,24 @@ import LoginBackgroundImage from "../assets/images/login-background-image/login-
 import { MdOutlineEmail } from "react-icons/md";
 import supabase from "../supabaseClient";
 import { useLocation } from "react-router-dom";
-
-
+import { useState } from "react";
 
 function VerifyAccount() {
   const location = useLocation();
   const email = location.state?.email;
-  
+
+  const [message, setMessage] = useState("");
+  const [isSending, setIsSending] = useState(false);
+
   const handleResendEmail = async () => {
+    setMessage("");
+
     if (!email) {
-      alert("Email address not found. Please create your account again.");
+      setMessage("Email address not found. Please create your account again.");
       return;
     }
+
+    setIsSending(true);
 
     const { error } = await supabase.auth.resend({
       type: "signup",
@@ -23,12 +29,14 @@ function VerifyAccount() {
       },
     });
 
+    setIsSending(false);
+
     if (error) {
-      alert(error.message);
+      setMessage(error.message);
       return;
     }
 
-    alert("Verification email sent.");
+    setMessage("Verification email sent.");
   };
 
   return (
@@ -60,9 +68,15 @@ function VerifyAccount() {
             type="button"
             className="w-full h-12 rounded-xl bg-zinc-800 text-xl font-medium text-white cursor-pointer"
             onClick={handleResendEmail}
+            disabled={isSending}
           >
-            Resend Email
+            {isSending ? "Sending..." : "Resend Email"}
           </button>
+          {message && (
+            <p className="text-center text-sm font-medium text-green-700">
+              {message}
+            </p>
+          )}
         </div>
       </div>
     </div>

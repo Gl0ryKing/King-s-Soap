@@ -66,7 +66,7 @@ function HomeLogin() {
                     <NavLink
                         to="/EmailToPWReset"
                         className={({ isActive }) =>
-                            'block text-2xl text-gray-800 underline underline-offset-4 hover:scale-101 hover:text-[#8B6B4A]'
+                            'block text-2xl text-gray-800 underline underline-offset-4 hover:scale-101'
                         }
                     >
                         Forgot Password?
@@ -75,7 +75,7 @@ function HomeLogin() {
 
                     <Link 
                     to="/createaccount" 
-                    className="inline-block text-2xl text-gray-800 underline underline-offset-4"
+                    className="inline-block text-2xl text-gray-800 underline underline-offset-4 hover:scale-101"
                     >
                     Create an account
                     </Link>

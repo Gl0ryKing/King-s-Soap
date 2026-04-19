@@ -1,5 +1,4 @@
-
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 import supabase from "../supabaseClient";
@@ -18,7 +17,8 @@ function CreateAccount() {
     const [confirmPassword, setConfirmPassword] = useState("");
 
     const [errorMessage, setErrorMessage] = useState("");
-    
+
+    const navigate = useNavigate();
 
     const handleCreateAccount = async (event) => {
         event.preventDefault();
@@ -52,6 +52,8 @@ function CreateAccount() {
             setErrorMessage(error.message);
             return;
         }
+
+        navigate("/verifyaccount");
 };
     
     const LoginBackgroundImage = getImageUrl("images/login-background-image.png");
@@ -118,7 +120,7 @@ function CreateAccount() {
                 )}
                 <button
                     type="submit"
-                    className="w-full h-12 rounded-xl bg-zinc-800 text-white text-xl font-medium"
+                    className="w-full h-12 rounded-xl bg-zinc-800 text-white text-xl font-medium cursor-pointer"
                 >
                     Create Account
                 </button>

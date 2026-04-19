@@ -14,21 +14,36 @@ const getImageUrl =  (imagePath) => {
 
 function CreateAccount() {
     const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
 
     const handleCreateAccount = async (event) => {
         event.preventDefault();
 
+        setErrorMessage("");
+
         const trimmedEmail = email.trim();
 
-        // if (!emailRegex.test(trimmedEmail)) {
-        // setErrorMessage("Please enter a valid email address.");
-        // return;
-        // }
+        const hasLetter = /[A-Za-z]/.test(password);
+        const hasNumber = /\d/.test(password);
 
-        // await supabase.auth.signUp({
-        // email: trimmedEmail,
-        // password,
-        // });
+        if (password.length < 8 || !hasLetter || !hasNumber) {
+        setErrorMessage(
+            "Password must be at least 8 characters and include at least 1 letter and 1 number."
+        );
+        return;
+        }
+        
+
+        const { error } = await supabase.auth.signUp({
+        email: trimmedEmail,
+        password: password,
+        });
+
+        if (error) {
+            setErrorMessage(error.message);
+            return;
+        }
 };
     
     const LoginBackgroundImage = getImageUrl("images/login-background-image.png");
@@ -64,10 +79,14 @@ function CreateAccount() {
                     Password
                     </label>
                     <input
-                    type="password"
-                    placeholder="Value"
-                    className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-gray-400"
-                    />
+                        type="password"
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                        required
+                        minLength={8}
+                        placeholder="Value"
+                        className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-gray-400"
+                        />
                 </div>
 
                 <div>
@@ -81,6 +100,11 @@ function CreateAccount() {
                     />
                 </div>
 
+                {errorMessage && (
+                    <p className="text-sm font-medium text-red-600">
+                        {errorMessage}
+                    </p>
+                )}
                 <button
                     type="submit"
                     className="w-full h-12 rounded-xl bg-zinc-800 text-white text-xl font-medium"

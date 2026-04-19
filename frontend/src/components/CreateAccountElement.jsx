@@ -48,9 +48,12 @@ function CreateAccount() {
         setIsSubmitting(true);
 
 
-        const { error } = await supabase.auth.signUp({
-        email: trimmedEmail,
-        password: password,
+        await supabase.auth.signUp({
+            email: trimmedEmail,
+            password: password,
+            options: {
+                emailRedirectTo: `${window.location.origin}/login`,
+            },
         });
 
         setIsSubmitting(false);
@@ -87,7 +90,7 @@ function CreateAccount() {
                         onChange={(event) => setEmail(event.target.value)}
                         required
                         pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
-                        placeholder="Value"
+                        placeholder="user@example.com"
                         className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-gray-400"
                         />
                 </div>
@@ -102,7 +105,7 @@ function CreateAccount() {
                         onChange={(event) => setPassword(event.target.value)}
                         required
                         minLength={8}
-                        placeholder="Value"
+                        placeholder="********"
                         className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-gray-400"
                         />
                 </div>
@@ -116,7 +119,7 @@ function CreateAccount() {
                         value={confirmPassword}
                         onChange={(event) => setConfirmPassword(event.target.value)}
                         required
-                        placeholder="Value"
+                        placeholder="********"
                         className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-gray-400"
                         />
                 </div>

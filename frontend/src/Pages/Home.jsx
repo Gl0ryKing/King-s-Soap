@@ -17,8 +17,8 @@ const Home = () => {
             image_url
           )
         `)
-        // INSERT POPULAR ITEMS TO DISPLAY HERE, INPUT NAME
-        .order("name", ["Rose","Vanilla & Spearmint"]);
+        // INSERT POPULAR ITEMS TO DISPLAY HERE, INPUT ID
+        .in("id", [4,5,6,7,8,9]);
 
       if (error) {
         console.error("Error fetching products:", error);
@@ -34,6 +34,9 @@ const Home = () => {
   return (
     <div style={{ width: "100%", height: "100%" }}>
       <HomeImage />
+    <div className="w-full flex justify-center pt-8">
+      <h2 className="text-4xl md:text-5xl font-serif font-semibold text-white">Our Best Sellers</h2>
+    </div>
 
       <div className="w-full flex justify-center pt-6">
         <div className="grid grid-cols-2 gap-6">

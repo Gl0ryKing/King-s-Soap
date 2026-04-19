@@ -70,7 +70,11 @@ function CreateAccount() {
             return;
         }
 
-        navigate("/verifyaccount");
+        navigate("/verifyaccount", {
+            state: {
+                email: trimmedEmail,
+            },
+        });
 };
     
     const LoginBackgroundImage = getImageUrl("images/login-background-image.png");

@@ -1,7 +1,8 @@
+![King-s-Soap logo](frontend\src\assets\logo.png) 
 # King-s-Soap
 
 ## Description
-
+#### Synopsis of Project
 King's Soap is a local, family-owned business founded by Anita King in 2016. Anita King is self-taught and has
 devoted many hours to refining her soapmaking process and creating a brand that she is passionate and proud of.
 She offers a variety of options including organic and all-natural selections, avoiding harsh chemicals in every bar.​
@@ -14,71 +15,81 @@ Check back in with us in December when we plan to launch the new website!​
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
 * VS Code, Node.js, NPM, React, vite, tailwind css, supabase-js(Or whatever server you will use)
+* We have been fine running the project on both MacOS and Windows.
 
-### Installing utilizing VS Code
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+### Installing for use in VS Code
 
 #### 1: Install Node.js
 1. Open PowerShell or Command Prompt
-2. Go to where they want the project
-Example:
-cd C:\
-3. Clone the repo
+2. Go to where they want the project\
+Example: cd C:\
+3. Clone the repo:\
 git clone https://github.com/SteveNavarr0/King-s-Soap.git
-4. Go into the project
+4. Go into the project:\
 cd King-s-Soap
-5. Go into the frontend
+5. Go into the frontend:\
 cd frontend
-6. Install the React app dependencies
+6. Install the React app dependencies:\
 npm install
 
 #### 2: Install tailwind css:
-1. In terminal
+1. In terminal:\
 cd frontend
-2. Install and connect to vite
+2. Install and connect to vite:\
 npm install -D tailwindcss @tailwindcss/vite
 
 #### 3: Install Supabase and add your API keys:
-1. In terminal
-cd frontend
-2. Install and connect to vite
+1. In terminal: cd frontend
+2. Install and connect to vite:\
 npm install @supabase/supabase-js 
-3. Add API keys to your personal .env folder
-VITE_SUPABASE_URL=
-VITE_SUPABASE_ANON_KEY=
+3. Add API keys to your personal .env folder (in frontend):
+    * VITE_SUPABASE_URL=URL_HERE
+    * VITE_SUPABASE_ANON_KEY=KEY_HERE
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-
 #### 1: Steps to run the project in localhost
-1. Go into the project
-cd King-s-Soap
-2. Go into the frontend
-cd frontend
-3. Run the React app
-npm run dev
-4. Open the site
+1. Go into the project:\
+ cd King-s-Soap
+2. Go into the frontend:\
+ cd frontend
+3. Run the React app:\
+ npm run dev
+4. Open the site:
 Open the URL shown in the terminal, usually:
 http://localhost:5173/
 
-
+<!--
 ```
 code blocks for commands
 
 ```
+-->
+
+
+## Testing
+Placeholder to be done in the Fall for CSC 191.
+
+## Deployment
+Placeholder to be done in the Fall for CSC 191.
+
+## Developer Instructions
+Placeholder to be done in the Fall for CSC 191.
+
+## Timeline
+Using the project's JIRA, a timeline section will be completed here.
 
 ## Help
 
+
+<!--
+command to run if program contains helper info
+-->
+
 Any advise for common problems or issues.
 ```
-command to run if program contains helper info
+this will be left empty for now as we develop more and more features!
 ```
 
 ## Authors
@@ -100,15 +111,14 @@ Contributors names with links to their github accounts
 
 ## Version History
 
-* 0.2 Semester 2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1 Semester 1
+* 0.2 Semester 2 - Fall 2026 (upcoming)
+    * Comming near the end of the year!
+* 0.1 Semester 1 - Spring 2026
     * Initial Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+<!-- This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details -->
 
 Colin Nugent, Imran Ahmad, Steve Navarro, Glory King, Harkeerat Uppal, and Ryland Porter maintain nominal ownership of the software, and the Product Owner will receive all specified documentation along with the software, including both source and executable code. Also, the CSUS Computer Science Department reserves the right to use the documentation and product as examples of student work.
 
@@ -116,4 +126,6 @@ The resulting software requires a running server to be utilized.
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
+<!-- Inspiration, code snippets, etc. -->
+
+Thanks to CSUS for all of the teaching and training provided to the team in regards to being able to successfully produce the work that has been done. Thanks to the client, Anita King for the awsome project as well as her trust in us to see her vision come to life.

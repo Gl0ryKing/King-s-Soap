@@ -130,4 +130,4 @@ The resulting software requires a running server to be utilized.
 
 <!-- Inspiration, code snippets, etc. -->
 
-Thanks to CSUS for all of the teaching and training provided to the team in regards to being able to successfully produce the work that has been done. Thanks to the client, Anita King for the awsome project as well as her trust in us to see her vision come to life.
+Thanks to CSUS for all of the teaching and training provided to the team in regards to being able to successfully produce the work that has been done. Thanks to the client, Anita King for the awesome project as well as her trust in us to see her vision come to life.

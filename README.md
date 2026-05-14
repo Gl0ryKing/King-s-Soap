@@ -1,6 +1,6 @@
 <!-- ![King-s-Soap logo](frontend\src\assets\logo.png) -->
 <p align="left">
-  <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/kingsoapWhite.png" width="80" align="left" style="margin-right: 10px;">
+  <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/kingsoapWhite.png" width="100" align="left" style="margin-right: 10px;">
   <h1>King-s-Soap</h1>
 </p>
 

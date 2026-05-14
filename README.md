@@ -1,4 +1,6 @@
-![King-s-Soap logo](frontend\src\assets\logo.png) 
+<!-- ![King-s-Soap logo](frontend\src\assets\logo.png) -->
+<img src="frontend/src/assets/logo.png">
+
 # King-s-Soap
 
 ## Description

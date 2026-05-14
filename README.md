@@ -81,7 +81,7 @@ code blocks for commands
 <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/localhost_5173_shop%20(2).png">
 
 ## ER Diagram
-<img src="https://https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/erd.png">
+<img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/erd.png">
 
 ## Testing
 Placeholder to be done in the Fall for CSC 191.

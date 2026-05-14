@@ -1,5 +1,5 @@
 <!-- ![King-s-Soap logo](frontend\src\assets\logo.png) -->
- <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/kingsoapWhite.png"> |  King-s-Soap 
+ <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/kingsoapWhite.png">  King-s-Soap 
 
 
 ## Description

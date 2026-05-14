@@ -1,9 +1,7 @@
 <!-- ![King-s-Soap logo](frontend\src\assets\logo.png) -->
- <p>
-  <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/kingsoapWhite.png" width="120" style="vertical-align: middle;">
-</p>
+<img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/kingsoapWhite.png"> 
 
-<h1>King-s-Soap</h1>
+# King-s-Soap
 
 
 ## Description

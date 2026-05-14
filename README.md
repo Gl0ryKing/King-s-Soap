@@ -72,7 +72,7 @@ code blocks for commands
 
 ## Creative Images
 <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Product%20Images/images/What%20a%20Man/What%20a%20Man2.png">
-<img src ="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Product%20Images/images/Rose/rose2.png">
+<img src ="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Product%20Images/images/Lavender%20Bloom%20&%20Soothing%20Sandalwood/Lavender%20Bloom%20&%20Soothing%20Sandalwood.png">
 
 ## Product Images
 <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/localhost_5173_.png">

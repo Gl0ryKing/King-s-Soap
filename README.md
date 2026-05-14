@@ -1,5 +1,10 @@
 <!-- ![King-s-Soap logo](frontend\src\assets\logo.png) -->
- <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/kingsoapWhite.png">  King-s-Soap 
+ <p>
+  <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/kingsoapWhite.png" width="120" style="vertical-align: middle;">
+  <span style="font-size: 36px; font-weight: bold; vertical-align: middle;">
+    King-s-Soap
+  </span>
+</p>
 
 
 ## Description

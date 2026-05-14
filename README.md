@@ -89,7 +89,7 @@ Using the project's JIRA, a timeline section will be completed here.
 command to run if program contains helper info
 -->
 
-Any advise for common problems or issues.
+Any advice for common problems or issues.
 ```
 this will be left empty for now as we develop more and more features!
 ```

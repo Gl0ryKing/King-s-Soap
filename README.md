@@ -108,7 +108,7 @@ command to run if program contains helper info
 
 Any advice for common problems or issues.
 ```
-this will be left empty for now as we develop more and more features!
+This will be left empty for now as we develop more and more features!
 ```
 
 ## Authors

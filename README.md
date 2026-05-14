@@ -69,12 +69,6 @@ code blocks for commands
 ```
 -->
 
-##Jira Timeline
-Sprint 5 (31 August - 13 September) - Admin dashboard fully completed
-Sprint 6 (14 September - 27 September) - Shop Functionality Implemented
-Sprint 7 (28 September - 11 October) - Website running on the web
-Sprint 8 (12 October - 25 October) - Project ready for deployment
-
 
 ## Creative Images
 <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Product%20Images/images/What%20a%20Man/What%20a%20Man2.png">
@@ -90,7 +84,10 @@ Placeholder to be done in the Fall for CSC 191.
 Placeholder to be done in the Fall for CSC 191.
 
 ## Timeline
-Using the project's JIRA, a timeline section will be completed here.
+Sprint 5 (31 August - 13 September) - Admin dashboard fully completed
+Sprint 6 (14 September - 27 September) - Shop Functionality Implemented
+Sprint 7 (28 September - 11 October) - Website running on the web
+Sprint 8 (12 October - 25 October) - Project ready for deployment
 
 ## Help
 

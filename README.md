@@ -4,7 +4,6 @@
 # King-s-Soap
 
 ## Description
-#### Synopsis of Project
 King's Soap is a local, family-owned business founded by Anita King in 2016. Anita King is self-taught and has
 devoted many hours to refining her soapmaking process and creating a brand that she is passionate and proud of.
 She offers a variety of options including organic and all-natural selections, avoiding harsh chemicals in every bar.​

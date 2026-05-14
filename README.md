@@ -74,6 +74,12 @@ code blocks for commands
 <img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Product%20Images/images/What%20a%20Man/What%20a%20Man2.png">
 <img src ="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Product%20Images/images/Rose/rose2.png">
 
+## Product Images
+<img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/localhost_5173_.png">
+<img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/localhost_5173_shop.png">
+<img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/localhost_5173_shop%20(1).png">
+<img src="https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/localhost_5173_shop%20(2).png">
+
 ## ER Diagram
 <img src="https://https://efdpbraptsnhkcjealyg.supabase.co/storage/v1/object/public/Read-me%20images/erd.png">
 

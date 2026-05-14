@@ -90,7 +90,7 @@ Placeholder to be done in the Fall for CSC 191.
 Sprint 5 (31 August - 13 September) - Admin dashboard fully completed\
 Sprint 6 (14 September - 27 September) - Shop Functionality Implemented\
 Sprint 7 (28 September - 11 October) - Website running on the web\
-Sprint 8 (12 October - 25 October) - Project ready for deployment\
+Sprint 8 (12 October - 25 October) - Project ready for deployment
 
 ## Help
 
